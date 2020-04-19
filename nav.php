@@ -1,6 +1,6 @@
 
 
-<script src="/Partes/assets/js/jquery-3.4.1.js"></script> <!--llamado a la libreria jquery para funciones -->
+<script src="<?php echo JQUERY; ?>"></script> <!--llamado a la libreria jquery para funciones -->
 
 
 <script>
@@ -9,7 +9,6 @@
     
         $(document).ready(function(){
             
-        
             if(pagina=="index"){
                 
                 $("#enlacenav1").addClass("menu__link--select");
@@ -54,7 +53,6 @@
     
 <script>
     //este es el enlace al script del codigo permite ocultar el menu y hacerlo desplegable
-
 
     let btnMenu= document.getElementById("btnmenu");
     

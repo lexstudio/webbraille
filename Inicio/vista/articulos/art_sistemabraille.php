@@ -39,9 +39,9 @@
     ?>
 
     <?php
-        include '../nav.php';
+        include '../../../nav.php'; //nav general
     ?>
-    <script src="../assets/js/menu.js"></script> <!-- este es el enlace al script del codigo permite ocultar el menu y hacerlo desplegable -->
+    
     
    <main>
         <section class="group__articulo">

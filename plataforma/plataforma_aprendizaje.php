@@ -79,11 +79,15 @@
 
 
     
-    <?php include 'vista/header.php'; ?> 
+    <?php 
+        include 'vista/header.php'; 
+    ?> 
     
     
     <script> var pagina="aprendizaje";</script>
-    <?php include '../nav.php'; ?>
+    <?php 
+        include '../nav.php'; //nav general
+    ?> 
     
     
  

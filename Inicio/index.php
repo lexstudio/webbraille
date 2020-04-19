@@ -51,7 +51,7 @@
     <script> var pagina="index"; </script>
     <?php
            
-        include '../nav.php';
+        include '../nav.php'; //no pude utilizar ruta estatica pero es el nav general
     ?>
 <!-- ***********************************************************  -->
 

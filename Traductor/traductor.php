@@ -48,7 +48,7 @@
     <script> var pagina="traductor"; </script>
     <?php
            
-        include '../nav.php';
+        include '../nav.php'; //nav general
     ?>
 <!-- ***********************************************************  -->	
 <!-- este es el enlace al script del codigo permite ocultar el menu y hacerlo desplegable -->

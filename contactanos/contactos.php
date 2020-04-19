@@ -57,7 +57,7 @@
     <script> var pagina="contactanos"; </script>
     <?php
            
-        include '../nav.php';
+        include '../nav.php'; //nav general
     ?>
     
 <!-- *******************  Seccion Principal******************  -->
