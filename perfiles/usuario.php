@@ -27,7 +27,7 @@
 
     <link rel="stylesheet" href="usuarios.css">
 
-    <script src="/Partes/assets/js/jquery-3.4.1.js"></script>
+    <script src="<?php echo JQUERY; ?>"></script>
 </head>
 <body>
     
@@ -38,7 +38,7 @@
     <script> var pagina="perfil"; </script>
     <?php
         
-        include '../nav.php';
+        include '../nav.php'; //nav general
     ?>
 
 
@@ -196,7 +196,7 @@
 
     
     <?php
-        include 'vista/footer.html';
+        include FOOTER;
     ?>
 </body>
 </html>
