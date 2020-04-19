@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="<?php echo ICONOS1; ?>">
     <link rel="stylesheet" href="<?php echo ICONOS2; ?>">
 
-    <script src="vista/assets/js/Jquery/jquery-3.4.1.js"></script> <!--llamado a la libreria jquery para funciones -->
+    <script src="<?php echo JQUERY; ?>"></script> <!--llamado a la libreria jquery para funciones -->
 
    <!-- <script src="plataforma_script.js"></script>js para dar funcion a los botones de los cursos-->
 

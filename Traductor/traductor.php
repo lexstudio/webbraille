@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="<?php echo ICONOS1; ?>">
     <link rel="stylesheet" href="<?php echo ICONOS2; ?>">
 
-    <script src="vista/assets/js/Jquery/jquery-3.4.1.js"></script> <!--llamado a la libreria jquery para funciones -->
+    <script src="<?php echo JQUERY; ?>"></script> <!--llamado a la libreria jquery para funciones -->
 </head>
 <body>
     

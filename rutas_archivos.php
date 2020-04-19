@@ -15,29 +15,31 @@
 
 
     define('MY_PERFIL', "/Partes/perfiles/usuario.php");
+
     define('LOGEO','/Partes/logeo/login.php');
 
     define('LOGOUT', '/Partes/logeo/logout.php');
-
     
     define('FOOTER', "vista/footer.html");
 
     
 
 
-//ESTILO E ICONOS
+//ESTILO E ICONOS y Jquery
 
     define('ESTILO_GENERAL', "/Partes/assets/css/estilos.css");
     define('ESTILO_RESPONSIVE', "/Partes/assets/css/estilos_responsive.css");
 
-     define('ESTILO_ARTICULOS', "/Partes/assets/css/estilos_articulos.css");
+    define('ESTILO_ARTICULOS', "/Partes/assets/css/estilos_articulos.css");
 
     define('ESTILO_LOGIN',"/Partes/assets/css/estilos_login.css");
 
     define('ESTILO_TRADUCTOR','/Partes/assets/css/estilos_traductor.css');
 
-     define('ICONOS1', "/Partes/assets/css/font.css");
-     define('ICONOS2', "/Partes/assets/css_icon/css/all.min.css");
+    define('ICONOS1', "/Partes/assets/css/font.css");
+    define('ICONOS2', "/Partes/assets/css_icon/css/all.min.css");
+
+    define('JQUERY', "/Partes/assets/js/jquery-3.4.1.js");
 
 
 

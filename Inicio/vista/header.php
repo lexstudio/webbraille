@@ -7,9 +7,6 @@
 
 
 
-
-
-
 <header class="main_header">
     <div class="container container--flex">
         <div class="logo-container column column--50">
