@@ -41,7 +41,7 @@
     
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0,
      maximum-scale=3.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="vista/assets/css/estilos_login.css">
+    
     
     <link rel="stylesheet" href="<?php echo ESTILO_GENERAL; ?>">
     <link rel="stylesheet" href=<?php echo ESTILO_RESPONSIVE; ?>>
