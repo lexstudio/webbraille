@@ -161,5 +161,5 @@
 
 
     <?php
-        include 'vista/footer.html';
+        include '../footer.html'; //footer general
     ?>

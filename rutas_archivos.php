@@ -20,7 +20,7 @@
 
     define('LOGOUT', '/Partes/logeo/logout.php');
     
-    define('FOOTER', "vista/footer.html");
+    define('FOOTER', "../footer.html");
 
     
 

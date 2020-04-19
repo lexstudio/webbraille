@@ -102,7 +102,7 @@
     </main>
 
     <?php
-        include FOOTER;
+        include FOOTER; //footer general
     ?>
     
     

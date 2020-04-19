@@ -41,17 +41,10 @@
 
 
 
-
-
 <!-- *******************  Estamos agregando el header******************  -->
 <?php
         include 'vista/header.php';
 ?>
-
-
-
-
-
 
 <!-- *******************  Estamos agregando el nav******************  -->
     <script> var pagina="contactanos"; </script>
@@ -117,7 +110,7 @@
 
     <!-- *******************  Estamos agregando el footer******************  -->
     <?php
-        include 'vista/footer.html';
+        include FOOTER;
     ?>
 
 

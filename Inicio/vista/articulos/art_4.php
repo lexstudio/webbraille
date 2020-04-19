@@ -86,7 +86,7 @@
 
     
     <?php
-        include '../footer.html';
+        include '../../'.FOOTER; //footer general
     ?>
     
 </body>

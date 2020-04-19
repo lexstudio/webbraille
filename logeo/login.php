@@ -84,7 +84,7 @@
     
     
     <?php
-        include 'vista/footer.html';
+        include FOOTER;
     ?>
     
 </body>

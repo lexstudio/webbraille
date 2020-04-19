@@ -98,7 +98,7 @@
     </main>
     
     <?php
-        include '../footer.html';
+        include '../../'.FOOTER;
     ?>
     
 </body>   
