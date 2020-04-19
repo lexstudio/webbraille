@@ -8,7 +8,7 @@
 
 
 
-<link rel="stylesheet" href="/sitioweb_0/vista/assets/css_icon/css/all.min.css">
+
 
 
 <header class="main_header">
