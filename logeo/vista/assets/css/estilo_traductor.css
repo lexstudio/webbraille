@@ -1,0 +1,33 @@
+/** {
+    padding:0px;
+    margin:0px;
+    font-family: Century Gothic;
+}
+
+body {
+    background-color: #ededed;
+}*/
+
+
+@font-face{
+    font-family:"Braille";
+    src: url(font/Braille6-ANSI.ttf);
+}
+
+
+.texto{
+    display: block;
+    padding:20px;
+    margin:29px auto;
+    box-shadow: 0px 0px 12px #ccc;
+    background-color: #fff;
+    font-size: 20px;
+    color: black;
+    width: 80%;
+    text-align: left;
+}
+
+.braille{
+    font-family: 'Braille';
+    font-size: 30px;
+}

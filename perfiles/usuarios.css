@@ -1,0 +1,157 @@
+
+
+
+.labelform{
+    width: 550px;
+}
+
+
+#form_data_user{
+    border :1px solid red;
+}
+
+.contform{
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.contform div{
+    margin: 15px;
+}
+
+#form_data_user .text_info{
+    width: 300px;
+}
+
+
+
+
+
+.header_infouser{
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boton_edit{
+    color: #00b8eb;
+    border: 3px solid #00b8eb;
+    border-radius: 15%;
+    font-size: 20px;
+    padding: 3px;
+    margin-left: 15px;
+
+    cursor: pointer;
+}
+
+
+
+.formulario{
+    padding: 10px;
+    padding-top: 0;
+    
+    margin-top: 15px;
+    margin: auto;
+}
+
+.formulario h2{
+    text-align: center;
+    margin: 25px 0;
+}
+
+
+.formulario__label,
+.formulario__input-txt,
+.formulario__textarea{
+    display: block;
+    width: 100%;
+    
+}
+
+.formulario .formulario__label{
+    padding-top:15px ;
+    color:blue;
+}
+
+.formulario__input-txt{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario__textarea{
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100%;
+    max-width:100% ;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+.formulario__btn{
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+.zona_imagen{
+    width: 200px;
+    margin: auto;
+   /* border-radius: 25%;*/
+}
+
+.zona_imagen img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00b8eb;
+    object-fit: cover;
+}
+
+.column__title{
+    margin: 35px 0;
+}
+
+
+
+.zona_botones{
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn_cancelar{
+    background:grey;
+}
+
+.contact-information{
+    margin:auto;
+}
+
+.contact-information h2{
+    font-size: 25px;
+}
+
+.contact-information p{
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+
+.view_infouser{
+    margin-top: 20px;
+    margin-left: 10px;
+}
