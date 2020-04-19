@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="<?php echo ESTILO_GENERAL; ?>">
     <link rel="stylesheet" href=<?php echo ESTILO_RESPONSIVE; ?>>
 
-    <link rel="stylesheet" href="css_icon/contacto_estilos.css">
+    <link rel="stylesheet" href="contacto_estilos.css"> 
     <link rel="stylesheet" href="<?php echo ICONOS1; ?>">
     <link rel="stylesheet" href="<?php echo ICONOS2; ?>">
     
