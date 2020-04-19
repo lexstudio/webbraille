@@ -22,6 +22,7 @@
     <link rel="stylesheet" href=<?php echo ESTILO_RESPONSIVE; ?>>
     <link rel="stylesheet" href= <?php echo ESTILO_ARTICULOS; ?>> 
     <link rel="stylesheet" href="<?php echo ICONOS1; ?>">
+    <link rel="stylesheet" href="<?php echo ICONOS2; ?>">
 </head>
 <body>
 

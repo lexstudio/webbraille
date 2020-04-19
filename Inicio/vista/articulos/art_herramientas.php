@@ -24,6 +24,7 @@
     <link rel="stylesheet" href=<?php echo ESTILO_RESPONSIVE; ?>>
     <link rel="stylesheet" href= <?php echo ESTILO_ARTICULOS; ?>> 
     <link rel="stylesheet" href="<?php echo ICONOS1; ?>">
+    <link rel="stylesheet" href="<?php echo ICONOS2; ?>">
 
     <script src="../assets/js/Jquery/jquery-3.4.1.js"></script> <!--llamado a la libreria jquery para funciones -->
 </head>

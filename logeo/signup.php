@@ -95,12 +95,12 @@
      maximum-scale=3.0, minimum-scale=1.0">
      
      
-    <link rel="stylesheet" href="/sitioweb_0/vista/assets/css/estilos_login.css">
 
     <link rel="stylesheet" href="<?php echo ESTILO_GENERAL; ?>">
     <link rel="stylesheet" href=<?php echo ESTILO_RESPONSIVE; ?>>
-
     <link rel="stylesheet" href=<?php echo ESTILO_LOGIN; ?>>
+    <link rel="stylesheet" href="<?php echo ICONOS1; ?>">
+    <link rel="stylesheet" href="<?php echo ICONOS2; ?>">
    
 
 
