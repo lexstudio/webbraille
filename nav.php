@@ -105,7 +105,7 @@
         ?>
 
         if (sesion==0){
-            alert('No has iniciado sesion aun');
+            alert('No has iniciado sesion aún');
             $('#enlacenav2').attr('href','/Partes/logeo/login.php');
             $('#enlacenav3').attr('href','/Partes/logeo/login.php');
             $('.btn--aprender').attr('href','/Partes/logeo/login.php');
