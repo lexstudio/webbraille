@@ -1,69 +1,69 @@
-
-
-@font-face{
-    font-family:"Braille";
-    src: url(font/Braille6-ANSI.ttf);
+@font-face {
+  font-family: "Braille";
+  src: url(font/Braille6-ANSI.ttf);
 }
 
-@font-face{
-    font-family: "Braille2";
-    src: url(font/BrailleRegular.ttf);
+@font-face {
+  font-family: "Braille2";
+  src: url(font/BrailleRegular.ttf);
 }
 
-.texto{
-    display: block;
-    padding:20px;
-    margin:29px auto;
-    box-shadow: 0px 0px 12px #ccc;
-    background-color: #fff;
-    font-size: 20px;
-    color: black;
-    width: 80%;
-    text-align: left;
+.texto {
+  display: block;
+  padding: 20px;
+  margin: 29px auto;
+  box-shadow: 0px 0px 12px #ccc;
+  background-color: #fff;
+  font-size: 20px;
+  color: black;
+  width: 80%;
+  text-align: left;
 
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
-.braille{
-    font-family: 'Braille';
-    font-size: 30px;
+.braille {
+  font-family: "Braille";
+  font-size: 30px;
 }
-
 
 /*titulo de la pagina*/
-.titulo__pagina{
-    margin: 0 auto;
-    padding: 30px 0 0 0;
-    font-size: 1.8em;
-    font-family: 'Pacifico', cursive;
-    font-weight: 100;
-    max-width: 500px;
-    text-align: center;
-    
-    border-bottom: 3px solid #00b8eb;
+.titulo__pagina {
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+  font-size: 1.8em;
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  max-width: 500px;
+  text-align: center;
+
+  border-bottom: 3px solid #00b8eb;
 }
 
-.contenedor__titulo{
-   background: white;
-   margin: 0;
-   padding-bottom: 30px;
+.contenedor__titulo {
+  background: white;
+  margin: 0;
+  padding-bottom: 30px;
 }
-
 
 /*boton de voz*/
 
-.btn-voz{
-    background: #fff;
-    border: 3px solid #00b8eb;
-    color: #00b8eb;
-    padding: 10px 0;
+.btn-voz {
+  background: #fff;
+  border: 3px solid #00b8eb;
+  color: #00b8eb;
+  padding: 10px 0;
+  border-radius: 15px;
+  font-size: 1.8em;
+  width: 60px;
+  display: block;
+  margin: 0 100px 0 auto;
 
-    border-radius: 15px;
+  cursor: pointer;
+}
 
-    font-size: 1.8em;
-
-    width: 60px;
-    display: block;
-
-    margin: 0 100px 0 auto;
+.btn-voz-cancel {
+  border: 3px solid red;
+  color: red;
+  display: none;
 }

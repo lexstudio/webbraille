@@ -55,8 +55,13 @@
 	
 		<!-- botonera -->
 		<div  class="container">
-			<input type="button" onclick="startArtyom();" value="Start">
-			<input type="button" onclick="stopArtyom();" value="Stop">
+			<button onclick="startArtyom();"  id="btn-microfono" class="btn-voz">
+				<span class="fas fa-microphone-alt"></span>
+			</button>
+				
+			<button onclick="stopArtyom();" id="btn-microfono-off" class="btn-voz btn-voz-cancel">
+				<span class="fas fa-microphone-alt-slash"></span>
+			</button>
 			
 		</div>
 
@@ -73,12 +78,23 @@
 		</div>
 
 		<div class="container">
-			<textarea id="salida" class="texto" rows="6" cols="80" placeholder="Introduce el texto a traducir :)"></textarea>
-			<label for="leer">Texto traducido:</label>
-			<textarea id="leer" rows="6" cols="80" class="texto braille"></textarea>
-			<input type="button" id="btnLeer" value="Leer">
+			<textarea id="texto_entrada" onkeyup="enviarTexto()" class="texto" rows="6" cols="80" placeholder="Introduce el texto a traducir :)"></textarea>
+
+			<label for="texto_salida">Texto traducido:</label>
+
+			<textarea id="texto_salida" rows="6" cols="80" class="texto braille"></textarea>
+
+			<input type="button" id="btnLeer" value="texto_salida">
 		</div>
 
+
+<script>
+	function enviarTexto(){
+			var texto=document.getElementById("texto_entrada").value;
+			document.getElementById("texto_salida").value=texto;
+	}    
+
+</script>
 
 	<script>
 
@@ -158,20 +174,22 @@
 			{
 				indexes:['limpiar'],
 				action: function(){
-					$('#salida').val('');
+					$('#texto_entrada').val('');
 				}
 			}
 		]); 
 
 		// Escribir lo que escucha.
 		artyom.redirectRecognizedTextOutput(function(text,isFinal){
-			var texto = $('#salida');
+			var texto = $('#texto_entrada');
 			if (isFinal) {
 				texto.val(text);
 			}else{
 				
 			}
 		});
+
+
 
 
 		//inicializamos la libreria Artyom
@@ -198,9 +216,9 @@
                 btn.addClass('disabled');
                 btn.attr('disabled', 'disabled');
 
-                var text = $('#leer').val();
+                var text = $('#texto_salida').val();
                 if (text) {
-                    var lines = $("#leer").val().split("\n").filter(function (e) {
+                    var lines = $("#texto_salida").val().split("\n").filter(function (e) {
                         return e
                     });
                     var totalLines = lines.length - 1;
