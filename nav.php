@@ -1,13 +1,29 @@
 
 
+<script src="<?php echo JQUERYARTYOM; ?>"></script> <!--scripts para comando de voz -->
+<script src="<?php echo ARTYOMLIB; ?>"></script>
+<script src="<?php echo ARTYOMCOMMANDS; ?>"></script>
+    
 <script src="<?php echo JQUERY; ?>"></script> <!--llamado a la libreria jquery para funciones -->
 
 
 <script>
         
+        
       /*Este es un script basado en jquery para seleccionar una opcion en el nav*/  
     
         $(document).ready(function(){
+
+        function startArtyom(){
+            artyom.initialize({
+            lang: "es-ES",
+            continuous:true,// Reconoce 1 solo comando y para de escuchar
+            listen:false, // Iniciar !
+            debug:true, // Muestra un informe en la consola
+            speed:1 // Habla normalmente
+            });
+        };
+        window.onload=startArtyom();
             
             if(pagina=="index"){
                 
@@ -33,12 +49,18 @@
             <span class="icon-menu" id="btnmenu"></span> <!--boton del menu-->
             <ul class="menu" id="menu">
                 
-                <li class="menu__item"><a id="enlacenav1" href='<?php echo INDEX;?>' class="menu__link">Inicio</a></li>
+                <li class="menu__item">
+                    <a id="enlacenav1" href='<?php echo INDEX;?>' class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a id="enlacenav2" href=<?php echo TRADUCTOR;?> class="menu__link">Traductor</a>
+                </li>
                 
-                <li class="menu__item"><a id="enlacenav2" href=<?php echo TRADUCTOR;?> class="menu__link">Traductor</a></li>
-                
-                <li class="menu__item"><a id="enlacenav3" href= <?php echo PLATAFORMA_APRENDIZAJE;?> class="menu__link">Aprendizaje</a></li>
-                <li class="menu__item"><a id="enlacenav4" href=<?php echo CONTACTANOS;?> class="menu__link">Contactanos</a></li>
+                <li class="menu__item">
+                    <a id="enlacenav3" href= <?php echo PLATAFORMA_APRENDIZAJE;?> class="menu__link">Aprendizaje</a>
+                </li>
+                <li class="menu__item"><a id="enlacenav4" href=<?php echo CONTACTANOS;?> class="menu__link">Contactanos</a>
+                </li>
             </ul>
 
             <div class="social-icon"> 
@@ -90,5 +112,44 @@
         }
         
     }
+
+</script>
+
+
+<script>
+    $('#enlacenav1').mouseover(function() {
+        artyom.say("Pagina de Inicio")
+    });
+
+    $('#enlacenav1').mouseout(function() {
+        artyom.shutUp();
+    });
+
+    $('#enlacenav2').mouseover(function() {
+        artyom.say("Sección del traductor")
+    });
+
+    $('#enlacenav2').mouseout(function() {
+        artyom.shutUp();
+    });
+
+    $('#enlacenav3').mouseover(function() {
+        artyom.say("Sección Aprendizaje")
+    });
+
+    $('#enlacenav3').mouseout(function() {
+        artyom.shutUp();
+    });
+
+    $('#enlacenav4').mouseover(function() {
+        artyom.say("Sección contáctanos")
+    });
+
+    $('#enlacenav4').mouseout(function() {
+        artyom.shutUp();
+    });
+
+
+
 
 </script>

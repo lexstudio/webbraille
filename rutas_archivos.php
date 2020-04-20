@@ -50,7 +50,11 @@
     define('ART4', "/Partes/Inicio/vista/articulos/art_4.php");
 
 
+//libreria artyom
 
+    define('ARTYOMLIB', "/Partes/Traductor/artyom/artyom.min.js");
+    define('ARTYOMCOMMANDS', "/Partes/Traductor/artyom/artyomCommands.js");
+    define('JQUERYARTYOM', "/Partes/Traductor/artyom/jquery-3.1.1.js");
 
 
 

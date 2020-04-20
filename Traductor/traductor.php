@@ -8,19 +8,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
-	<script src="artyom/jquery-3.1.1.js"></script>
-	<script src="artyom/artyom.min.js"></script>
-	<script src="artyom/artyomCommands.js"></script>
+	<title>Traductor</title>
+	<script src="<?php echo JQUERYARTYOM; ?>"></script>
+	<script src="<?php echo ARTYOMLIB; ?>"></script>
+	<script src="<?php echo ARTYOMCOMMANDS; ?>"></script>
 
-	  <link rel="stylesheet" href="<?php echo ESTILO_GENERAL; ?>">
-    <link rel="stylesheet" href=<?php echo ESTILO_RESPONSIVE; ?>>
+	<link rel="stylesheet" href="<?php echo ESTILO_GENERAL; ?>">
+  <link rel="stylesheet" href=<?php echo ESTILO_RESPONSIVE; ?>>
 
 
-    <link rel="stylesheet" href="<?php echo ESTILO_TRADUCTOR; ?>">
-    <link rel="stylesheet" href="<?php echo ICONOS1; ?>">
-    <link rel="stylesheet" href="<?php echo ICONOS2; ?>">
+	<link rel="stylesheet" href="<?php echo ESTILO_TRADUCTOR; ?>">
+	<link rel="stylesheet" href="<?php echo ICONOS1; ?>">
+	<link rel="stylesheet" href="<?php echo ICONOS2; ?>">
 
 	
 </head>
@@ -115,7 +114,7 @@
 
 	// $(document).ready(function() {
 
-		$('#uno').mouseover(function() {
+	/* 	$('#uno').mouseover(function() {
 			artyom.say("Pagina de Inicio")
 		});
 
@@ -145,7 +144,7 @@
 
 		$('#cuatro').mouseout(function() {
 			artyom.shutUp();
-		});
+		}); */
 
 		//El sistema responde
 		artyom.addCommands([
@@ -219,9 +218,9 @@
 			artyom.initialize({
 				lang: "es-ES",
 				continuous:true,// Reconoce 1 solo comando y para de escuchar
-	            listen:true, // Iniciar !
-	            debug:true, // Muestra un informe en la consola
-	            speed:1 // Habla normalmente
+	      listen:true, // Iniciar !
+	      debug:true, // Muestra un informe en la consola
+	      speed:1 // Habla normalmente
 			});
 		};
 		
