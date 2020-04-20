@@ -25,14 +25,11 @@
     <link rel="stylesheet" href="<?php echo ICONOS1; ?>">
     <link rel="stylesheet" href="<?php echo ICONOS2; ?>">
 
-    <script src="<?php echo JQUERY; ?>"></script> <!--llamado a la libreria jquery para funciones -->
+    <script src="<?php echo JQUERY; ?>"></script>
 </head>
 <body>
     
     
-
-
-
 
 <!-- *******************  Estamos agregando el header******************  -->
 <?php
@@ -40,8 +37,6 @@
         include 'vista/header.php';
     ?>
 <!-- ***********************************************************  -->
-
-
 
 
 <!-- *******************  Estamos agregando el nav******************  -->
@@ -53,9 +48,6 @@
 <!-- ***********************************************************  -->	
 <!-- este es el enlace al script del codigo permite ocultar el menu y hacerlo desplegable -->
 
-
-     
-    
 
      <section>
             <div class='container'>
@@ -70,7 +62,7 @@
     <div class="container">
         <a href="" class="btn btn-voz" id="btn_voz"><span class="fas fa-microphone-alt"></span></a>
     
-        <textarea name="atraducir" class="texto" id="texto" cols="80" rows="6" onkeyup="enviarTexto()" placeholder="Introduce el texto a traducir :)"></textarea>
+        <textarea name="atraducir" class="texto" id="texto" cols="80" rows="6" onkeyup="enviarTexto()" onchange="enviarTexto()" placeholder="Introduce el texto a traducir :)"></textarea>
     
        
         <textarea name="traducido" class="texto braille" id="texto2" cols="80" rows="6" readonly="readonly"></textarea>
