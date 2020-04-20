@@ -55,11 +55,11 @@
 	
 		<!-- botonera -->
 		<div  class="container">
-			<button onclick="startArtyom();"  id="btn-microfono" class="btn-voz">
+			<button onclick="mostrarMicrofono1(); startArtyom();"  id="btn-microfono" class="btn-voz">
 				<span class="fas fa-microphone-alt"></span>
 			</button>
 				
-			<button onclick="stopArtyom();" id="btn-microfono-off" class="btn-voz btn-voz-cancel">
+			<button onclick="mostrarMicrofono2(); stopArtyom();" id="btn-microfono-off" class="btn-voz btn-voz-cancel">
 				<span class="fas fa-microphone-alt-slash"></span>
 			</button>
 			
@@ -80,15 +80,27 @@
 		<div class="container">
 			<textarea id="texto_entrada" onkeyup="enviarTexto()" class="texto" rows="6" cols="80" placeholder="Introduce el texto a traducir :)"></textarea>
 
-			<label for="texto_salida">Texto traducido:</label>
+			<label for="texto_salida">Texto traducido a Braille:</label>
 
-			<textarea id="texto_salida" rows="6" cols="80" class="texto braille"></textarea>
+			<textarea id="texto_salida" rows="6" cols="80" class="texto braille" readonly="readonly"></textarea>
 
 			<input type="button" id="btnLeer" value="texto_salida">
 		</div>
 
 
 <script>
+
+	function mostrarMicrofono1(){
+		$('#btn-microfono').hide();
+		$('#btn-microfono-off').show();
+	}
+
+	function mostrarMicrofono2(){
+		$('#btn-microfono-off').hide();
+		$('#btn-microfono').show();
+		enviarTexto();
+	}
+
 	function enviarTexto(){
 			var texto=document.getElementById("texto_entrada").value;
 			document.getElementById("texto_salida").value=texto;
@@ -101,7 +113,7 @@
 	// $(document).ready(function() {
 
 		$('#uno').mouseover(function() {
-			artyom.say("enlace 1")
+			artyom.say("Pagina de Inicio")
 		});
 
 		$('#uno').mouseout(function() {
@@ -109,15 +121,15 @@
 		});
 
 		$('#dos').mouseover(function() {
-			artyom.say("enlace 2")
+			artyom.say("Sección del traductor")
 		});
         
-        $('#dos').mouseout(function() {
+    $('#dos').mouseout(function() {
 			artyom.shutUp();
 		});
 
 		$('#tres').mouseover(function() {
-			artyom.say("enlace 3")
+			artyom.say("Sección Aprendizaje")
 		});
         
     $('#tres').mouseout(function() {
@@ -125,7 +137,7 @@
 		});
 
 		$('#cuatro').mouseover(function() {
-			artyom.say("enlace 4")
+			artyom.say("Sección contáctanos")
 		});
 
 		$('#cuatro').mouseout(function() {
@@ -155,26 +167,33 @@
 				}
 			},
 			{
-				indexes:['abrir google','abrir facebook', 'abrir youtube'],
+				indexes:['abrir inicio','abrir traductor', 'abrir plataforma', 'abrir contáctanos'],
 				action: function(i){
 					if (i==0) {
-						artyom.say("Abriendo google");
-						window.open("http://www.google.com",'_blank');
+						artyom.say("Abriendo pagina de inicio");
+						window.open("http://localhost/Partes/Inicio/index.php",'_blank');
 					}
 					if (i==1) {
-						artyom.say("Abriendo facebook");
-						window.open("http://www.facebook.com/intecsolt/",'_blank');
+						artyom.say("Abriendo pagina de traductor");
+						window.open("http://localhost/Partes/Traductor/artyom/",'_blank');
 					}
 					if (i==2) {
-						artyom.say("Abriendo youtube");
-						window.open("https://www.youtube.com/channel/UCF721oswf7EUSsQbuGFoMZQ",'_blank');
+						artyom.say("Abriendo sección aprendizaje");
+						window.open("http://localhost/Partes/plataforma/plataforma_aprendizaje.php",'_blank');
 					}
+
+					if (i==3) {
+						artyom.say("Abriendo sección Contáctanos");
+						window.open("http://localhost/Partes/contactanos/contactos.php",'_blank');
+					}
+
 				}
 			},
 			{
 				indexes:['limpiar'],
 				action: function(){
 					$('#texto_entrada').val('');
+					$('#texto_salida').val('');
 				}
 			}
 		]); 
