@@ -13,7 +13,7 @@
 
 
     require 'vista/header.php';
-    require 'modelo/conexion_db_model.php';
+    require '../modelo/conexion_db_model.php';
 
        $message='';
 

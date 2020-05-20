@@ -1,6 +1,6 @@
 <?php
     
-    @include 'modelo/sesion_model.php';
+    @include '../modelo/sesion_model.php';
     
 ?>
 
@@ -12,7 +12,7 @@
 <header class="main_header">
     <div class="container container--flex">
         <div class="logo-container column column--50">
-            <h1 class="logo"><a href="/Partes/Inicio/index.php" class="header__logo">Web Braille</a></h1>
+            <h1 class="logo"><a href="/Inicio/index.php" class="header__logo">Web Braille</a></h1>
         </div>
 
         
@@ -29,7 +29,7 @@
 
                     <p class="main-header__contactInfo__address">
                         <span class="fas fa-power-off"></span>
-                        <a href="/Partes/logeo/logout.php" class="header__link">Salir</a>
+                        <a href="/logeo/logout.php" class="header__link">Salir</a>
                         
                      </p>
         </div>

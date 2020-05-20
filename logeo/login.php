@@ -12,7 +12,7 @@
     
 
 
-    require 'modelo/conexion_db_model.php';
+    require '../modelo/conexion_db_model.php';
 
     if (!empty($_POST['email']) && !empty($_POST['password'])){                           //solo deja entrar si las cajas de texto email y password no estan vacias
         $records=$conn->prepare('SELECT id, email, password FROM users WHERE email=:email');
@@ -24,7 +24,7 @@
 
         if(@count($result)>0 && password_verify($_POST['password'],$result['password'])){  //validacion de contraseñas
            $_SESSION['user_id']=$result['id'];
-           header('Location: /Partes/Inicio/index.php');                                              // enviamos a esta pagina cuando ingresa el usuario 
+           header('Location: /Inicio/index.php');                                              // enviamos a esta pagina cuando ingresa el usuario 
         }else{
             $message='Estas credenciales no coinciden';
         }

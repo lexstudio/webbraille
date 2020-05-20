@@ -1,17 +1,17 @@
 
 <?php
 
-    include 'modelo/sesion_model.php';
+    include '../modelo/sesion_model.php';
 
     include "../rutas_archivos.php";
 
-    require 'devuelve_cursos.php';
+    include 'devuelve_cursos.php';
     $cursos= new devuelve_cursos();
     $array_cursos=$cursos->get_cursos();
 
     
     
-    require 'devuelve_info_user.php';
+    include 'devuelve_info_user.php';
     $info_user=new devuelve_info_user();
     $array_infouser=$info_user->get_info_user();
 

@@ -12,7 +12,7 @@
     
 //contraseña de usuario en wp:413*4ndeR9
     try{
-        $conn=new PDO("mysql:host=$server; dbname=$database;",$username,$password);
+        $conn=new PDO("mysql:host=$server2; dbname=$database2;",$username,$password2);
     }catch(PDOException $e){
         die('Conexion fallida:'.$e->getMessage());
     }

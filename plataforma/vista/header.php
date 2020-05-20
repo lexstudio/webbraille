@@ -1,13 +1,8 @@
 
 
 <?php
-    @include 'modelo/sesion_model.php';
-    //include dirname( __DIR__ ) . "/rutas_archivos.php";    
-    //include dirname( __DIR__ ) . "/modelo/sesion_model.php";
+   // @include '../modelo/sesion_model.php';
 ?>
-
-
-
 
 
 
