@@ -52,9 +52,9 @@
 
 //libreria artyom
 
-    define('ARTYOMLIB', "/Partes/Traductor/artyom/artyom.min.js");
-    define('ARTYOMCOMMANDS', "/Partes/Traductor/artyom/artyomCommands.js");
-    define('JQUERYARTYOM', "/Partes/Traductor/artyom/jquery-3.1.1.js");
+    define('ARTYOMLIB', "/Traductor/artyom/artyom.min.js");
+    define('ARTYOMCOMMANDS', "/Traductor/artyom/artyomCommands.js");
+    define('JQUERYARTYOM', "/Traductor/artyom/jquery-3.1.1.js");
 
 
 

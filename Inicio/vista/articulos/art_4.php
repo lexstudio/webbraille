@@ -1,6 +1,6 @@
 <?php
     
-    include '../../modelo/sesion_model.php';
+    include '../../../modelo/sesion_model.php';
 
     include "../../../rutas_archivos.php";
 ?>

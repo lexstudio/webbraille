@@ -10,7 +10,7 @@
         public function conexion(){
 
             /*Realizamos la conexion*/
-            $this->conexion_db=new mysqli(DB_HOST, DB_USUARIO, DB_CONTRA, DB_NOMBRE);
+            $this->conexion_db=new mysqli(DB_HOST2, DB_USUARIO2, DB_CONTRA2, DB_NOMBRE2);
 
             
             /*En el caso de que la conexion no tenga exito*/

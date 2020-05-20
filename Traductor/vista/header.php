@@ -6,9 +6,6 @@
 
 
 
-<link rel="stylesheet" href="vista/assets/css_icon/css/all.min.css">
-
-
 <header class="main_header">
     <div class="container container--flex">
         <div class="logo-container column column--50">

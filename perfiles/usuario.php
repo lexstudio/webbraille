@@ -2,6 +2,7 @@
     
 
     include "../rutas_archivos.php";
+    //include "../../modelo/sesion_model";
 
 
     //llamamos a la funcion que devuelve la info del user desde la base de datos

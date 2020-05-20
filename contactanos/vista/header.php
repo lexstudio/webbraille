@@ -6,7 +6,7 @@
 
 
 
-<link rel="stylesheet" href="vista/assets/css_icon/css/all.min.css">
+
 
 
 <header class="main_header">
