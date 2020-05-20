@@ -10,7 +10,7 @@
 <header class="main_header">
     <div class="container container--flex">
         <div class="logo-container column column--50">
-            <h1 class="logo"><a href="/Partes/Inicio/index.php" class="header__logo">Web Braille</a></h1>
+            <h1 class="logo"><a href="/Inicio/index.php" class="header__logo">Web Braille</a></h1>
         </div>
 
         
@@ -27,7 +27,7 @@
 
                     <p class="main-header__contactInfo__address">
                         <span class="fas fa-power-off"></span>
-                        <a href="/Partes/logeo/logout.php" class="header__link">Salir</a>
+                        <a href="/logeo/logout.php" class="header__link">Salir</a>
                         
                      </p>
         </div>
@@ -50,12 +50,12 @@
                 <div class="main-header__contactInfo column column--50">
                     <p class="main-header__contactInfo__phone">
                         <span class="fas fa-user-plus"></span>
-                            <a href="/Partes/logeo/signup.php" class="header__link">Registrarse</a>
+                            <a href="/logeo/signup.php" class="header__link">Registrarse</a>
                     </p>
 
                     <p class="main-header__contactInfo__address">
                         <span class="fas fa-sign-in-alt"></span>
-                            <a href="/Partes/logeo/login.php" class="header__link">Iniciar sesión</a>
+                            <a href="/logeo/login.php" class="header__link">Iniciar sesión</a>
                      </p>
                 </div>
 
